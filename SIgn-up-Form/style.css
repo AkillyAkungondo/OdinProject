@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'myFont';
+    src: url(./Assets/Fonts/Norse-Bold.otf) format('opentype')
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#01002c;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.side-panel {
+    width: 40%;
+    position:relative;
+    overflow:hidden;
+}
+
+.image-container{
+    height: 100%;
+    width: 100%;
+}
+
+.background-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    color: #fff;
+    height: 100px;
+    font-family: 'myFont', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.btm-overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    color: #fff;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+   
+    padding: 10px;
+    overflow: hidden;
+}
+
+.btm-overlay a{
+    color: #fff;
+}
+
+.overlay-img{
+    height: 100%;
+    left: 40%;
+}
+
+.overlay p{
+    font-size: 4.5rem;
+}
+
+.main-content {
+    width: 60%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-txt p {
+    margin: 0 0 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    border: none;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    border: none; 
+    gap: 70px;
+}
+
+
+
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color:#01002c;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: flex-start;
+}
+
+.bottom-txt {
+    margin-top: 20px;
+}
+
+.bottom-txt a {
+    color: #01002c;
+    text-decoration: none;
+}
+
+input:focus{
+    border: 1px solid rgb(64, 64, 255);
+    box-shadow: 0px 4px 8px rgba(64, 64, 255, 0.7);
+outline: none;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
